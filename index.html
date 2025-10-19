@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="hi">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<title>अर्दास कीर्तन — श्री श्याम जी कीर्तन</title>
+	<meta name="description" content="अर्दास कीर्तन - श्री श्याम जी के भक्तिगीत। मोबाइल-फ्रेंडली और भक्ति पूर्ण वेबसाइट।" />
+	<!-- Add fonts for Hindi + modern UI -->
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700;900&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+	<style>
+		:root{
+			--bg:#ffffff;
+			--gold:#D4AF37;
+			--deep-blue:#0B3D91;
+			--muted-blue:#2E6FB3;
+			--text:#222;
+			--card:#fbfbfb;
+			--radius:12px;
+			--glass: rgba(255,255,255,0.6);
+			/* हल्का सुनहरा टोन बैकअप */
+			--gold-light: #FFF8EE;
+			/* Hindi-friendly + modern UI fonts */
+			--ui-sans: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+			--dev-sans: "Noto Sans Devanagari", "Poppins", system-ui, -apple-system;
+			font-family: var(--dev-sans);
+		}
+		*{box-sizing:border-box}
+		html,body{height:100%;margin:0;background:linear-gradient(180deg,#ffffff 0%,#f8fbff 100%);color:var(--text);-webkit-font-smoothing:antialiased}
+		header{
+			position:sticky;top:0;z-index:40;background:linear-gradient(90deg, rgba(255,255,255,0.85), rgba(255,255,255,0.7));
+			backdrop-filter: blur(6px);border-bottom:1px solid rgba(10,20,50,0.04);
+		}
+		.container{max-width:1100px;margin:0 auto;padding:0 18px}
+		.navbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+		.brand{display:flex;align-items:center;gap:12px}
+		.logo{
+			width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--gold),var(--muted-blue));
+			display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:20px;box-shadow:0 6px 18px rgba(11,61,145,0.12)
+		}
+		.site-title{line-height:1;margin:0}
+		/* प्रमुख शीर्षक: बड़ा, बोल्ड और सुनहरा (सुधारित) */
+		.site-title h1{
+			font-size:26px;
+			margin:0;
+			color:var(--gold);
+			font-weight:900;
+			letter-spacing:0.6px;
+			text-shadow: 0 2px 6px rgba(212,175,55,0.18);
+		}
+		/* सुरीला उपशीर्षक: सुनहरा-श्वेत टोन, थोड़ा हल्का */
+		.site-title p{
+			font-size:13px;
+			margin:0;
+			color: #9a7a2b; /* softer gold tone */
+			font-weight:700;
+			opacity:0.95;
+		}
+
+		.navlinks{display:flex;gap:14px;align-items:center}
+		.navlinks a{color:var(--deep-blue);text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600}
+		.navlinks a.cta{background:var(--gold);color:#08112a}
+		.hamburger{display:none;background:none;border:0;padding:8px;border-radius:8px}
+		main{padding:28px 0}
+		.hero{
+			display:grid;grid-template-columns:1fr;gap:18px;align-items:center;padding:26px;border-radius:16px;
+			background: linear-gradient(180deg, rgba(255,248,238,0.6), rgba(212,175,55,0.03));
+			box-shadow: 0 10px 30px rgba(16,10,6,0.06);
+		}
+		.hero-inner{display:flex;flex-direction:column;gap:14px}
+		.h-title{font-size:22px;color:var(--deep-blue);margin:0}
+		.h-sub{color:#4b5f83;margin:0;font-size:14px}
+		.actions{display:flex;gap:12px;flex-wrap:wrap}
+		.btn{padding:10px 14px;border-radius:10px;border:0;font-weight:700;cursor:pointer}
+		.btn-primary{background:var(--gold);color:#07102b}
+		.btn-outline{background:transparent;border:2px solid var(--deep-blue);color:var(--deep-blue)}
+		.section{margin-top:28px;padding:20px;border-radius:12px;background:var(--card);box-shadow:0 6px 18px rgba(11,61,145,0.04)}
+		h2{margin:0 0 12px 0;color:var(--deep-blue)}
+		.grid{display:grid;gap:14px}
+		.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+		.card{padding:14px;border-radius:12px;background:linear-gradient(180deg,#ffffff,var(--gold-light));border:1px solid rgba(212,175,55,0.13)}
+		.member{display:flex;gap:12px;align-items:center}
+		.avatar{width:56px;height:56px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#ffffff);display:flex;align-items:center;justify-content:center;color:#331f00;font-weight:800;box-shadow:0 6px 14px rgba(212,175,55,0.10)}
+		.small{font-size:13px;color:#44567b}
+		.process{display:flex;flex-direction:column;gap:10px}
+		.step{display:flex;gap:12px;align-items:flex-start}
+		.badge{width:36px;height:36;border-radius:8px;background:var(--deep-blue);color:white;display:flex;align-items:center;justify-content:center;font-weight:800}
+		.events-list{display:flex;flex-direction:column;gap:12px}
+		.price-card{display:flex;flex-direction:column;gap:8px;padding:16px;border-radius:12px;background:linear-gradient(180deg, rgba(212,175,55,0.06), rgba(11,61,145,0.02));border:1px solid rgba(212,175,55,0.22)}
+		.price-value{font-size:20px;font-weight:800;color:var(--deep-blue)}
+		.note{font-size:13px;color:#334a7a}
+		.footer{margin-top:28px;padding:18px;border-radius:12px;color:#475a83;background:linear-gradient(180deg, rgba(11,61,145,0.02), rgba(255,255,255,0));text-align:center}
+		.motif{opacity:0.12;position:absolute;right:18px;top:18px;width:96px;height:96px}
+		/* responsive */
+		@media (min-width:760px){
+			.hero{grid-template-columns: 1fr 360px}
+			.navlinks{display:flex}
+			.hamburger{display:none}
+			.grid.cols-3{grid-template-columns:repeat(3,1fr)}
+		}
+		@media (max-width:759px){
+			/* center brand/title in header for mobile, keep hamburger on right */
+			.navbar{position:relative;padding:14px 18px;}
+			.brand{justify-content:center;width:100%;}
+			.site-title{ text-align:center; }
+			.site-title h1{ font-size:22px; } /* adjust for mobile */
+			.site-title p{ font-size:12px; }
+
+			/* place hamburger on the right, vertically centered */
+			.hamburger{
+				display:block;
+				position:absolute;
+				right:18px;
+				top:50%;
+				transform:translateY(-50%);
+				z-index:60;
+			}
+
+			/* ensure nav menu hidden by default on mobile (existing behavior) */
+			.navlinks{display:none}
+			.grid.cols-3{grid-template-columns:1fr}
+		}
+		/* subtle animations */
+		.logo, .card{transition:transform .24s ease, box-shadow .24s ease}
+		.logo:hover{transform:translateY(-4px)}
+		/* smooth scrolling for better fluidity */
+		html { scroll-behavior: smooth; }
+
+		/* typography refinements */
+		body { line-height:1.5; font-feature-settings: "liga" 0; color:var(--text); }
+		.site-title h1{ font-family: var(--dev-sans); }
+		.site-title p{ font-family: var(--ui-sans); opacity:0.95; }
+
+		/* responsive title sizing */
+		.site-title h1{ font-size:28px; }
+		@media(min-width:760px){ .site-title h1{ font-size:34px; } }
+
+		/* nav and buttons: softer hover, smoother transitions */
+		.navlinks a, .btn { transition: all .18s ease; }
+		.navlinks a:hover { transform:translateY(-3px); box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+		.btn:hover { transform:translateY(-3px); box-shadow:0 8px 22px rgba(212,175,55,0.12); }
+
+		/* make hero/subtitle slightly more elegant */
+		.h-title{ font-family:var(--dev-sans); font-weight:700; font-size:20px; letter-spacing:0.2px; }
+		.h-sub{ font-family:var(--ui-sans); color:#6a7a9c; }
+
+		/* cards subtle lift on hover */
+		.card{ will-change:transform,opacity; transition:transform .28s cubic-bezier(.2,.9,.3,1), box-shadow .28s ease; }
+		.card:hover{ transform:translateY(-6px); box-shadow:0 18px 40px rgba(34,36,45,0.06); }
+
+		/* reveal animation: initial hidden, become visible when .reveal applied */
+		.section, .card { opacity:0; transform:translateY(12px); transition:opacity .6s ease, transform .6s cubic-bezier(.2,.9,.3,1); }
+		.reveal { opacity:1; transform:none; }
+
+		/* refined avatar style */
+		.avatar{ box-shadow:0 8px 26px rgba(212,175,55,0.08); border:2px solid rgba(212,175,55,0.10); }
+
+		/* softer footer and motif */
+		.footer { background: linear-gradient(180deg, rgba(255,248,238,0.6), rgba(255,255,255,0)); }
+		.motif { opacity:0.08; }
+
+		/* new: premium ॐ + venue styles */
+		.om-row{display:flex;align-items:center;gap:16px}
+		.om-badge{
+			width:88px;height:88px;border-radius:16px;background:var(--gold);
+			display:flex;align-items:center;justify-content:center;
+			color:#08112a;font-weight:900;font-size:42px;
+			box-shadow:0 10px 28px rgba(212,175,55,0.14);
+			border:2px solid rgba(255,255,255,0.25);
+			flex:0 0 88px;
+		}
+		.venue-meta{display:flex;flex-direction:column;gap:6px}
+		.venue-title{font-weight:900;color:#6b4a10;font-size:16px;letter-spacing:0.3px}
+		.venue-details{font-size:13px;color:#5b6272}
+
+		/* steps: golden numbered badges and soft cards */
+		.process{display:flex;flex-direction:column;gap:14px}
+		.step{display:flex;gap:14px;align-items:flex-start}
+		.step-number{
+			width:46px;height:46px;border-radius:10px;background:linear-gradient(180deg,var(--gold),#f9f1de);
+			color:#08112a;font-weight:900;display:flex;align-items:center;justify-content:center;font-size:16px;
+			box-shadow:0 8px 18px rgba(212,175,55,0.10);
+			flex:0 0 46px;
+		}
+		.step-card{
+			background:linear-gradient(180deg,#ffffff,rgba(255,248,238,0.8));
+			padding:12px;border-radius:10px;border:1px solid rgba(212,175,55,0.08);
+			box-shadow:0 10px 26px rgba(16,10,6,0.04);
+		}
+		.step-title{font-weight:800;color:#6a4b0f;margin-bottom:6px}
+		.step-desc{color:#5b6272;font-size:13px;line-height:1.45}
+
+		/* members: larger avatar, gold accent and role in Hindi */
+		.card.member{display:flex;gap:14px;align-items:center;padding:12px;border-radius:12px}
+		.member .avatar{width:72px;height:72px;border-radius:50%;font-size:18px}
+		.member .info{display:flex;flex-direction:column}
+		.member .name{font-weight:900;color:#5a3f09}
+		.member .role{font-size:13px;color:#5b6272}
+
+		/* small responsive tweaks */
+		@media(max-width:759px){
+			.om-row{flex-direction:column;align-items:center;text-align:center}
+			.om-badge{margin-bottom:6px}
+			.venue-meta{align-items:center}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="container navbar">
+			<div class="brand">
+				<!-- logo removed to simplify devotional look -->
+				<div class="site-title">
+					<h1>अर्दास कीर्तन</h1>
+					<p>श्री श्याम जी — कीर्तन और भक्ति</p>
+				</div>
+			</div>
+
+			<nav>
+				<button class="hamburger" id="menuBtn" aria-label="Open menu">
+					<svg width="22" height="22" viewBox="0 0 24 24"><path fill="#0B3D91" d="M3 6h18M3 12h18M3 18h18" stroke-width="1.6" stroke-linecap="round"/></svg>
+				</button>
+				<div class="navlinks" id="nav">
+					<a href="#home">होम</a>
+					<a href="#about">हमारे बारे में</a>
+					<a href="#members">सदस्यगण</a>
+					<a href="#how">कीर्तन का प्रवाह</a>
+					<a href="#events">कार्यक्रम</a>
+					<a href="#pricing">योगदान</a>
+					<a href="#contact" class="cta">संपर्क / कीर्तन बुक करें</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- फोटो सेक्शन: नोट (फाइल नाम) हटाया, इमेज हाईट बढ़ाई (280px), और श्री श्याम की कैप्शन हटा दी गई -->
+	<section class="container section" id="photos" aria-labelledby="photos-title" style="margin-top:12px;">
+		<h2 id="photos-title">श्री श्याम जी और समूह की फोटो</h2>
+		<p class="small">नीचे दी गई तस्वीरें वेबसाइट प्रस्तुति के लिए हैं।</p>
+		<div class="grid cols-3" style="margin-top:12px">
+			<div class="card" style="text-align:center;">
+				<div style="height:280px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(135deg, rgba(255,248,238,0.9), rgba(212,175,55,0.04));overflow:hidden">
+					<img src="shyam.jpg" alt="श्री श्याम जी" style="width:100%;height:100%;object-fit:cover;display:block" />
+				</div>
+			</div>
+
+			<div class="card" style="text-align:center;">
+				<div style="height:280px;display:flex;align-items:center;justify-content:center;border-radius:8px;background:linear-gradient(135deg, rgba(255,248,238,0.9), rgba(212,175,55,0.04));overflow:hidden">
+					<img src="kirtan.jpg" alt="अर्दास कीर्तन मंडली" style="width:100%;height:100%;object-fit:cover;display:block" />
+				</div>
+				<div class="small" style="display:block;margin-top:10px;font-weight:700">अर्दास कीर्तन मंडली</div>
+			</div>
+
+			<!-- removed 'नोट' card as requested -->
+		</div>
+	</section>
+
+	<main class="container" id="home">
+		<section class="hero">
+			<div class="hero-inner">
+				<h2 class="h-title">श्री श्याम जी कीर्तन — अर्दास और भक्ति</h2>
+				<p class="h-sub">कीर्तन की परंपरा में दिव्य अनुभव — भावपूर्ण भजन, नाम-स्मरण और सेवा। हमारे साथ भक्ति और आनंद में जुड़ें।</p>
+
+				<div class="actions">
+					<button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">कीर्तन बुक / दान करें</button>
+					<button class="btn btn-outline" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">हमारे बारे में जानें</button>
+				</div>
+
+				<div class="section" style="margin-top:12px;">
+					<div class="om-row">
+						<div class="om-badge" aria-hidden="true">ॐ</div>
+						<div class="venue-meta">
+							<div class="venue-title">समय एवं स्थान</div>
+							<div class="venue-details">प्रत्येक शनिवार | 6:00 PM — 9:00 PM</div>
+							<div class="venue-details">श्री श्याम मंदिर, भिवंडी, मुंबई</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- premium card on right for larger screens -->
+			<aside class="card" style="min-height:160px;display:flex;flex-direction:column;justify-content:space-between;">
+				<div>
+					<h3 style="margin:0;color:var(--deep-blue)">आगामी कीर्तन</h3>
+					<p class="small">विशेष आरती एवं सेवा — आमंत्रित भजन मंडली के साथ।</p>
+				</div>
+				<div style="display:flex;gap:8px;justify-content:space-between;align-items:center">
+					<!-- डायनामिक तारीख: अगले रविवार को अपडेट होगी -->
+					<div id="nextEventDay" style="font-weight:800;color:var(--muted-blue)">--</div>
+					<button class="btn btn-primary" onclick="document.getElementById('events').scrollIntoView({behavior:'smooth'})">विवरण देखें</button>
+				</div>
+			</aside>
+		</section>
+
+		<section id="about" class="section" aria-labelledby="about-title">
+			<h2 id="about-title">हमारे बारे में</h2>
+			<p class="small">अर्दास कीर्तन श्री श्याम जी के कीर्तन को समर्पित है। हम पारंपरिक भक्ति-रूपों को अपनाते हुए सामुदायिक सेवा और भजन से आध्यात्मिक उन्नति का मार्ग दिखाते हैं।</p>
+			<div class="grid cols-3" style="margin-top:12px">
+				<div class="card">
+					<h3 style="margin:0">उद्देश्य</h3>
+					<p class="small">भक्ति, सेवा और सामुदायिक जुड़ाव के माध्यम से जागरूकता फैलाना।</p>
+				</div>
+				<div class="card">
+					<h3 style="margin:0">हमारे मूल्य</h3>
+					<p class="small">सद्भाव, परंपरा और निस्वार्थ सेवा।</p>
+				</div>
+				<div class="card">
+					<h3 style="margin:0">सेवा</h3>
+					<p class="small">प्रसाद वितरण, मंच-व्यवस्था और भजन मंडली का सहयोग — सभी के लिए अवसर।</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="members" class="section" aria-labelledby="members-title">
+			<h2 id="members-title">भजन मंडली</h2>
+			<p class="small">हमारी समर्पित मंडली — स्वर, हारमोनियम, तबला और मंजीरा के साथ।</p>
+			<div style="margin-top:12px" class="grid cols-3">
+				<div class="card member">
+					<div class="avatar">RS</div>
+					<div class="info">
+						<div class="name">Rajesh Sharma</div>
+						<div class="role">हारमोनियम</div>
+					</div>
+				</div>
+
+				<div class="card member">
+					<div class="avatar">AS</div>
+					<div class="info">
+						<div class="name">अमन शर्मा</div>
+						<div class="role">तबला एवं ताल</div>
+					</div>
+				</div>
+
+				
+			</div>
+		</section>
+
+		<section id="how" class="section" aria-labelledby="how-title">
+			<h2 id="how-title">कीर्तन का प्रवाह</h2>
+			<p class="small">हमारी कीर्तन परंपरा में आह्वान, नाम-स्मरण, सामूहिक भजन, आरती और समापन सेवा शामिल है।</p>
+
+			<div class="process" style="margin-top:10px">
+				<div class="step">
+					<div class="step-number">1</div>
+					<div class="step-card">
+						<div class="step-title">आह्वान</div>
+						<div class="step-desc">प्रार्थनाएँ एवं दीप प्रज्ज्वलन — ध्यानपूर्वक और सम्मान के साथ आरम्भ किया जाता है।</div>
+					</div>
+				</div>
+
+				<div class="step">
+					<div class="step-number">2</div>
+					<div class="step-card">
+						<div class="step-title">नाम-स्मरण और कीर्तन</div>
+						<div class="step-desc">भावपूर्ण भजन और सामूहिक स्तुति — भक्तजन मिलकर नाम का जाप करते हैं।</div>
+					</div>
+				</div>
+
+				<div class="step">
+					<div class="step-number">3</div>
+					<div class="step-card">
+						<div class="step-title">आरती और समर्पण</div>
+						<div class="step-desc">आरती के बाद समर्पण हेतु नाम-विंन्यास और आशीर्वचन।</div>
+					</div>
+				</div>
+
+				<div class="step">
+					<div class="step-number">4</div>
+					<div class="step-card">
+						<div class="step-title">सेवा एवं प्रसाद</div>
+						<div class="step-desc">प्रसाद वितरण और समुदायिक आशीर्वाद — समापन के साथ सेवा का आयोजन।</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="events" class="section" aria-labelledby="events-title">
+			<h2 id="events-title">आगामी कार्यक्रम</h2>
+			<div class="events-list">
+				<div class="card" style="display:flex;justify-content:space-between;align-items:center">
+					<div>
+						<div style="font-weight:700">साप्ताहिक श्री श्याम कीर्तन</div>
+						<div class="small">प्रत्येक रविवार — सभी के लिए खुला कीर्तन।</div>
+					</div>
+					<!-- यहाँ अगले रविवार की तारीख दिखेगी -->
+					<div id="nextSundayDate" class="small">--</div>
+				</div>
+
+				<div class="card" style="display:flex;justify-content:space-between;align-items:center">
+					<div>
+						<div style="font-weight:700">विशेष विजयोत्सव</div>
+						<div class="small">विशेष आरती व समर्पण — बुकिंग आवश्यक।</div>
+					</div>
+					<div class="small">बुकिंग पर</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="pricing" class="section" aria-labelledby="pricing-title">
+			<h2 id="pricing-title">योगदान और नियम</h2>
+			<p class="small">हम पारदर्शी और समुदाय-उन्मुख योगदान नीति रखते हैं ताकि मंडली, यात्रा व प्रसाद का खर्च पूरा हो सके।</p>
+
+			<div style="display:grid;gap:12px;margin-top:12px">
+				<div class="price-card">
+					<div style="display:flex;justify-content:space-between;align-items:center">
+						<div>
+							<div style="font-weight:800;color:var(--deep-blue)">निरंतर उपस्थिति</div>
+							<div class="small">जो भक्त सतत् रूप से कीर्तन में मौजूद रहते हैं (आयोजकों द्वारा परिभाषित सत्र श्रृंखला) उन्हें विशेष अनुदान मिलता है — ड्रॉ-नाम योगदान माफ।</div>
+						</div>
+						<div class="price-value">माफ</div>
+					</div>
+					<div class="note">अनुदान के लिए पंजीकरण और उपस्थिति का सत्यापन आवश्यक है。</div>
+				</div>
+
+				<div class="price-card">
+					<div style="display:flex;justify-content:space-between;align-items:center">
+						<div>
+							<div style="font-weight:800;color:var(--deep-blue)">ड्रॉ-नाम योगदान</div>
+							<div class="small">कुछ कीर्तनों के अंत में हम समर्पण हेतु नाम निकालते हैं। यदि आपका नाम निकला और आप निरंतर उपस्थिति शर्त पूरी नहीं करते, तो योगदान ₹5,100 अपेक्षित है।</div>
+						</div>
+						<div style="font-weight:800;color:#8b2b2b">₹5,100</div>
+					</div>
+					<div class="note">यह मंडली, यात्रा और प्रसाद के हेतु हैं। सदस्यता/उपस्थिति सत्यापन के लिए आयोजकों से संपर्क करें।</div>
+				</div>
+
+				<div class="card">
+					<div style="font-weight:700">अन्य योगदान</div>
+					<div class="small">दान, आरती प्रायोजन या विशेष कार्यक्रमों के लिए स्वागत है। रसीद उपलब्ध कराई जाती है।</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="section" aria-labelledby="contact-title">
+			<h2 id="contact-title">संपर्क / कीर्तन बुक करें</h2>
+			<p class="small">कीर्तन बुक करने, सदस्यता या उपस्थिति सत्यापन के लिए नीचे संपर्क करें।</p>
+
+			<div style="display:grid;gap:10px;margin-top:12px">
+				<div class="card">
+					<div style="display:flex;flex-direction:column;gap:8px">
+						<label class="small" style="font-weight:700">समन्वयक</label>
+						<div class="small">नाम: अमन शर्मा</div>
+						<div class="small">फोन: +91 82084 48435</div>
+						<div class="small">पता: भिवंडी, मुंबई</div>
+						<div class="small">ईमेल: ardas.kirtan@example.com</div>
+						<!-- Instagram link -->
+						<div style="margin-top:6px">
+							<a href="https://instagram.com/ardaas_kirtan_bhiwandi" target="_blank" style="color:var(--deep-blue);font-weight:700;text-decoration:none">@ardaas_kirtan_bhiwandi</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- बुकिंग: फॉर्म हटाकर व्हाट्सएप डायरेक्ट लिंक (href जावास्क्रिप्ट द्वारा सेट होगा) -->
+				<div class="card" style="display:flex;flex-direction:column;gap:12px;align-items:center;justify-content:center;">
+					<div style="font-weight:800;color:var(--deep-blue)">जल्दी बुक करें</div>
+					<div class="small">कृपया नीचे के व्हाट्सएप बटन से सीधे विनम्र अनुरोध भेजें</div>
+					<a id="waBooking" class="btn btn-primary" href="#" target="_blank" style="text-decoration:none;display:inline-block;margin-top:6px">WhatsApp पर बुक करें</a>
+				</div>
+			</div>
+		</section>
+
+		<footer class="footer">
+			<div style="display:flex;flex-direction:column;gap:8px;align-items:center">
+				<div style="font-weight:800;color:var(--deep-blue)">अर्दास कीर्तन — श्री श्याम जी</div>
+				<div class="small">Instagram: <a href="https://instagram.com/ardaas_kirtan_bhiwandi" target="_blank" style="color:var(--deep-blue);font-weight:700;text-decoration:none">@ardaas_kirtan_bhiwandi</a></div>
+				<div class="small">© <span id="year"></span> अर्दास कीर्तन। सभी सेवा और भक्ति भक्तों के लिए।</div>
+			</div>
+		</footer>
+	</main>
+
+	<!-- decorative lotus / om motif -->
+	<svg class="motif" viewBox="0 0 100 100" aria-hidden="true">
+		<g fill="none" stroke="#D4AF37" stroke-width="1.6" transform="translate(4,4) scale(0.92)">
+			<path d="M48 4c6 10 18 6 25 14 7 8 2 20-3 27-5 7-18 12-25 12s-20-5-25-12c-5-7-10-19-3-27 7-8 19-4 25-14z" />
+			<text x="20" y="70" fill="#D4AF37" font-size="20" font-weight="700" style="font-family:serif">ॐ</text>
+		</g>
+	</svg>
+
+	<script>
+		// small JS: menu toggle, year (removed image-preview handlers)
+		(function(){
+			document.getElementById('year').textContent = new Date().getFullYear();
+			var menuBtn = document.getElementById('menuBtn');
+			var nav = document.getElementById('nav');
+			menuBtn.addEventListener('click', function(){
+				if(nav.style.display === 'flex'){ nav.style.display = 'none'; }
+				else{ nav.style.display = 'flex'; nav.style.flexDirection = 'column'; nav.style.position='absolute'; nav.style.right='18px'; nav.style.top='64px'; nav.style.background='white'; nav.style.padding='10px'; nav.style.borderRadius='10px'; nav.style.boxShadow='0 8px 24px rgba(11,61,145,0.08)'; }
+			});
+			Array.from(document.querySelectorAll('#nav a')).forEach(function(a){
+				a.addEventListener('click', function(){ if(window.innerWidth < 760){ nav.style.display='none'; } });
+			});
+
+			// सेट करें: व्हाट्सएप बुकिंग संदेश (सौजन्य भाषा में हिंदी)
+			(function setWhatsAppHref(){
+				var phone = '918208448435';
+				var message = 'नमस्ते, मैं कीर्तन बुक करना चाहता/चाहती हूँ। कृपया उपलब्ध तारीख और विवरण बताइए। धन्यवाद।';
+				var url = 'https://api.whatsapp.com/send?phone=' + phone + '&text=' + encodeURIComponent(message);
+				var el = document.getElementById('waBooking');
+				if(el){ el.href = url; }
+			})();
+
+			// अगले रविवार की तारीख निकाल कर हिंदी में फॉर्मेट करके दिखाएँ
+			(function setNextSunday(){
+				function nextSunday(d){
+					var today = new Date(d.getFullYear(), d.getMonth(), d.getDate());
+					var day = today.getDay(); // 0 = Sunday
+					var diff = (7 - day) % 7; // 0 for Sunday (keeps today), otherwise days ahead
+					var result = new Date(today);
+					result.setDate(today.getDate() + diff);
+					return result;
+				}
+				var ns = nextSunday(new Date());
+				var opts = { weekday:'long', day:'numeric', month:'long' };
+				var formatted = ns.toLocaleDateString('hi-IN', opts); // ex: "रविवार, 14 दिसंबर"
+				// Update event list and aside
+				var ev = document.getElementById('nextSundayDate');
+				if(ev){ ev.textContent = formatted + ' • 6:00 PM'; }
+				var aside = document.getElementById('nextEventDay');
+				if(aside){ aside.textContent = formatted; }
+			})();
+
+			// IntersectionObserver: reveal sections/cards for smooth, fluid entrance
+			(function setupRevealObserver(){
+				try {
+					var opts = { root: null, rootMargin: "0px 0px -8% 0px", threshold: 0.08 };
+					var observer = new IntersectionObserver(function(entries){
+						entries.forEach(function(entry){
+							if(entry.isIntersecting){
+								entry.target.classList.add('reveal');
+								observer.unobserve(entry.target);
+							}
+						});
+					}, opts);
+
+					// observe main sections and important cards
+					var toObserve = document.querySelectorAll('.section, .card:not(.no-reveal)');
+					toObserve.forEach(function(el){ observer.observe(el); });
+				} catch(e){ /* graceful fallback for very old browsers */ }
+			})();
+		})();
+	</script>
+</body>
+</html>
